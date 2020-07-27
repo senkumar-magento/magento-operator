@@ -1,0 +1,6 @@
+domain: adobe.com
+layout: go.kubebuilder.io/v2
+repo: github.com/senkumar-magento/magento-operator.git
+version: 3-alpha
+plugins:
+  go.operator-sdk.io/v2-alpha: {}
