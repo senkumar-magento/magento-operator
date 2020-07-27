@@ -1,0 +1,7 @@
+apiVersion: adobe.com.adobe.com/v1alpha1
+kind: Magento
+metadata:
+  name: magento-sample
+spec:
+  # Add fields here
+  foo: bar

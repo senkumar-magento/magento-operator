@@ -1,0 +1,24 @@
+# permissions for end users to edit magentoes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: magento-editor-role
+rules:
+- apiGroups:
+  - adobe.com.adobe.com
+  resources:
+  - magentoes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - adobe.com.adobe.com
+  resources:
+  - magentoes/status
+  verbs:
+  - get
