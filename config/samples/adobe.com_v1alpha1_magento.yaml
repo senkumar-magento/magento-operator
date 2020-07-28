@@ -4,4 +4,6 @@ metadata:
   name: magento-sample
 spec:
   # Add fields here
-  foo: bar
+  magento:
+    replicas: 2
+    image: "magento/magento-cloud-docker-php:7.3-fpm-1.1"

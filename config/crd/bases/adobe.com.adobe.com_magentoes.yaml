@@ -36,10 +36,16 @@ spec:
         spec:
           description: MagentoSpec defines the desired state of Magento
           properties:
-            foo:
+            magento:
               description: Foo is an example field of Magento. Edit Magento_types.go
                 to remove/update
-              type: string
+              properties:
+                image:
+                  type: string
+                replicas:
+                  format: int32
+                  type: integer
+              type: object
           type: object
         status:
           description: MagentoStatus defines the observed state of Magento

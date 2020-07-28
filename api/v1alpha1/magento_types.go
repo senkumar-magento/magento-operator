@@ -29,7 +29,12 @@ type MagentoSpec struct {
 	// Important: Run "make" to regenerate code after modifying this file
 
 	// Foo is an example field of Magento. Edit Magento_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	MagentoPhp MagentoPhp `json:"magento,omitempty"`
+}
+
+type MagentoPhp struct {
+	Image    string `json:"image,omitempty"`
+	Replicas int32  `json:"replicas,omitempty"`
 }
 
 // MagentoStatus defines the observed state of Magento
